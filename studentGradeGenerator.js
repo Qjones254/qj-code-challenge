@@ -1,5 +1,6 @@
-
+//write your function here
 function calculateGrade(mark) {
+  //use if and else if
     if (mark > 79) {
       return 'A';
     } else if (mark >= 60) {
@@ -13,9 +14,10 @@ function calculateGrade(mark) {
     }
     
   }
+
   const prompt =require("prompt-sync")({sigint :true});
   let mark=prompt("Enter student marks (0-100):");
-  
+  //check code
   const result = calculateGrade(mark);
   console.log (result);
   

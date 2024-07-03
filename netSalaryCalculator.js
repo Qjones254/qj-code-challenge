@@ -1,11 +1,11 @@
-
+//write your function here
     function calculateNetSalary(basicSalary, benefits) {
-  
+       //rates
         const taxRate = 0.2
         const nhifRate = 0.1
         const nssfRate = 0.2
       
-        
+        //calculating desired result
         const grossSalary = basicSalary + benefits;
       
         
@@ -25,7 +25,7 @@
         };
       }
       
-      
+      //check code
       const basicSalary = 59000; 
       const benefits =4500; 
       const result = calculateNetSalary(basicSalary, benefits);
