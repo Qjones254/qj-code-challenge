@@ -1,17 +1,24 @@
 //write your function here
-function calculateDemeritPoints(speed){
-    let speedLimit=70;
+function calculateDemeritPoints(){
+  //assigning variables
+  let speedLimit=70;
+  const prompt =require("prompt-sync")({sigint :true});
+  const speed = prompt("Enter the driver's speed: ")
+  
     //use if and else if
      if (speed > speedLimit) {
       demeritPoints = Math.floor((speed - speedLimit) / 5)
-    return demeritPoints;
-   } else if(speed<=70){
+    return 'points:'+demeritPoints;
+   }
+    else if(speed<=speedLimit){
     return 'ok ';
-   }  
-    else if (demeritPoints>=12)
-        {return 'LicenseSuspended';}     
+   }  if(demeritPoints>12){
+    return 'License Suspended';
+   }
     }
-    //check if your code is correct
-    const result = calculateDemeritPoints (speed);
-    console.log (result);
+    //confirming code
+    const result=calculateDemeritPoints();
+  console.log (result);
+    
+   
   
